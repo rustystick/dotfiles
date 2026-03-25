@@ -1,2 +1,11 @@
 gh
 cagent
+
+# nvim - ignore LazyVim generated files but track personal configs
+nvim/.tests
+nvim/debug/
+nvim/.repro
+nvim/data/
+nvim/tt.*
+nvim/foo.*
+nvim/*.log
