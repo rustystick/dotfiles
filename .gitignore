@@ -9,3 +9,6 @@ nvim/data/
 nvim/tt.*
 nvim/foo.*
 nvim/*.log
+
+# tmux - ignore plugins, they're managed by TPM
+tmux/plugins/
