@@ -1,0 +1,22 @@
+return {
+  {
+    "mfussenegger/nvim-jdtls",
+    opts = {
+      settings = {
+        java = {
+          import = {
+            bazel = {
+              disabled = false,
+            },
+          },
+        },
+      },
+      jdtls = function(opts)
+        vim.list_extend(
+          opts.init_options.bundles,
+          vim.fn.glob(vim.env.HOME .. "/.cache/bazel-eclipse/plugins/*.jar", false, true)
+        )
+      end,
+    },
+  },
+}
