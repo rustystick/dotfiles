@@ -58,6 +58,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        vtls = require("vtls").lspconfig,
         tsserver = {
           settings = {
             typescript = {
